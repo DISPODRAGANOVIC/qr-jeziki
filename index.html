@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <title>Izbira jezika</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="font-family: Arial; text-align: center; padding: 40px;">
+
+<h2>Izberi jezik / Choose language</h2>
+
+<p>Če se stran ne preusmeri samodejno, izberi ročno:</p>
+
+<p>
+  <a href="sl.html">🇸🇮 Slovenščina</a><br><br>
+  <a href="en.html">🇬🇧 English</a><br><br>
+  <a href="de.html">🇩🇪 Deutsch</a>
+</p>
+
+<script>
+  const lang = navigator.language || navigator.userLanguage;
+
+  if (lang.startsWith("sl")) {
+    window.location.href = "sl.html";
+  } else if (lang.startsWith("de")) {
+    window.location.href = "de.html";
+  } else {
+    window.location.href = "en.html";
+  }
+</script>
+
+</body>
+</html>
