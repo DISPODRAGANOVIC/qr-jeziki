@@ -1,0 +1,2 @@
+# qr-jeziki
+PONUDBA ADAM DIESEL
